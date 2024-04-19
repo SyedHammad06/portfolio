@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./blogs.css" />
+    <title>Syed Hammad Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>SyedHammad</h1>
+        <div class="heading-gradient"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.kaggle.com/starcoder06" target="_blank">
+              <img
+                src="./images/kaggle.png"
+                alt="kaggle logo"
+                class="kaggle-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/syed-hammad-8ab98a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3By6BlKfgRSg2S%2FctoEmCOnQ%3D%3D"
+              target="_blank"
+            >
+              <img
+                src="./images/In-Blue-34.png"
+                alt="LinkedIn logo"
+                class="linkedin-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/SyedHammad06" target="_blank">
+              <img
+                src="./images/github-mark.svg"
+                alt="github logo"
+                class="github-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <label id="switch" class="switch">
+      <input type="checkbox" onchange="toggleTheme()" id="slider" />
+      <span class="slider round"></span>
+    </label>
+    <footer>
+      <a href="#">Scroll to Top</a>
+      <p>&copy; 2024 Syed Hammad - All Rights Reserved</p>
+    </footer>
+    <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+      }
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-light');
+        } else {
+          setTheme('theme-dark');
+        }
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-dark');
+        } else {
+          setTheme('theme-light');
+        }
+      })();
+    </script>
+  </body>
+</html>

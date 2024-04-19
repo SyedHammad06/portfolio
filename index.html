@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Syed Hammad Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="animate__animated animate__lightSpeedInLeft">SyedHammad</h1>
+        <div class="heading-gradient"></div>
+      </div>
+      <nav class="animate__animated animate__fadeInRight animate__delay-0.5s">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/blogs.html">Blogs</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://www.kaggle.com/starcoder06" target="_blank">
+              <img
+                src="./images/kaggle.png"
+                alt="kaggle logo"
+                class="kaggle-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/syed-hammad-8ab98a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3By6BlKfgRSg2S%2FctoEmCOnQ%3D%3D"
+              target="_blank"
+            >
+              <img
+                src="./images/In-Blue-34.png"
+                alt="LinkedIn logo"
+                class="linkedin-img"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/SyedHammad06" target="_blank">
+              <img
+                src="./images/github-mark.svg"
+                alt="github logo"
+                class="github-img"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <label id="switch" class="switch">
+      <input type="checkbox" onchange="toggleTheme()" id="slider" />
+      <span class="slider round"></span>
+    </label>
+    <main class="animate__animated animate__fadeIn animate__delay-0.5s">
+      <aside>
+        <h2>Data Scientist, AI / ML Engineer</h2>
+        <p>
+          I'm Syed Hammad, a big fan of exploring data. I love digging into
+          different industries to learn how they work and make them better. From
+          crunching numbers to using smart technology, I enjoy connecting data
+          to real-world changes. Whether it's helping with health, energy, or
+          money, I'm all about using data to make things awesome. Come join me
+          on this exciting adventure of learning and creating cool stuff!
+        </p>
+        <p class="mail">
+          Feel free to mail me @ <span>syedhammad626@gmail.com</span>
+        </p>
+      </aside>
+      <aside>
+        <div class="circle">
+          <img src="./images/me.png" alt="my-image" />
+        </div>
+      </aside>
+    </main>
+    <section class="animate__animated animate__fadeIn animate__delay-0.5s">
+      <div class="sub-heading">
+        <h3>Technical Skills</h3>
+        <div class="sub-heading-gradient"></div>
+      </div>
+      <div class="skills">
+        <div class="skills-left">
+          <p>Programming Languages</p>
+          <p>Web Technologies</p>
+          <p>Design & Prototyping</p>
+          <p>Business Intelligent Tools</p>
+        </div>
+        <div class="skills-right">
+          <p>Python, R, Javascript, Bash, C, C++, Java</p>
+          <p>HTML5, CSS3, Flask, React, NextJS, NodeJS</p>
+          <p>Figma, Adobe Illustrator, Adobe Photoshop, Canva</p>
+          <p>Microsoft Power BI, Tableau</p>
+        </div>
+      </div>
+    </section>
+    <section class="animate__animated animate__fadeIn animate__delay-0.5s">
+      <div class="sub-heading">
+        <h3>Education</h3>
+        <div class="sub-heading-gradient-2"></div>
+      </div>
+      <div class="education">
+        <div class="education-1">
+          <p class="year">Sept 2020 - July 2023</p>
+          <p class="course">Bachelor of Computer Application (BCA)</p>
+          <p class="clg">Kristu Jayanti College</p>
+        </div>
+        <div class="tree"></div>
+        <div class="education-2">
+          <p class="year">Sept 2023 - July 2025</p>
+          <p class="course">Master of Science (MSc.) - Big Data Analytics</p>
+          <p class="clg">St. Joseph's University</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="#">Scroll to Top</a>
+      <p>&copy; 2024 Syed Hammad - All Rights Reserved</p>
+    </footer>
+    <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+      }
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-light');
+        } else {
+          setTheme('theme-dark');
+        }
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-dark');
+        } else {
+          setTheme('theme-light');
+        }
+      })();
+    </script>
+  </body>
+</html>
