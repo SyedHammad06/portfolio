@@ -476,6 +476,15 @@ input:checked + .slider:before {
     align-items: flex-start;
     gap: 1rem;
   }
+
+  .education-1,
+  .education-2 {
+    font-size: 1.4rem;
+  }
+
+  .course {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1440px) {
