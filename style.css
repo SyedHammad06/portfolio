@@ -426,6 +426,10 @@ input:checked + .slider:before {
     font-size: 50%;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .switch {
     width: 30px;
     height: 15px;
