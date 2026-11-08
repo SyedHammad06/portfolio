@@ -76,7 +76,7 @@ export const journey = {
 export const contact = {
   title: "Contact",
   headline: { lead: "Something great starts with", emphasis: "a hello." },
-  body: "Hiring for AI engineering, or have data that should answer questions? I read every message.",
+  body: "Have an interesting idea, a question, or just want to connect? I'd love to hear from you.",
 };
 
 export const disciplines: Discipline[] = [
