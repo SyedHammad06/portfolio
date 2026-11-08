@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 2,
+  "stage": "hero",
+  "id": "hero",
+  "title": "First viewport",
+  "comp": { "path": ".impeccable/mocks/comp-1-name-led.jpg", "width": 1280, "height": 720 },
+  "components": [
+    {
+      "id": "first-viewport",
+      "name": "First viewport",
+      "medium": "Next.js / CSS / WebGL",
+      "note": "Assembled first viewport. Headline last name is off-white italic by your approved change; wordmark uses the pinned Instrument Serif.",
+      "box": { "x": 0, "y": 0, "w": 1, "h": 1 },
+      "preview": { "kind": "page", "path": "src/app/page.tsx" },
+      "dependencies": []
+    }
+  ]
+}

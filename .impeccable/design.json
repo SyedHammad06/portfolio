@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-08T00:00:00+05:30",
+  "title": "Design System: Syed Hammad",
+  "extensions": {
+    "colorMeta": {
+      "live-signal": {
+        "role": "primary",
+        "displayName": "Live Signal",
+        "canonical": "#ec8838",
+        "tonalRamp": [
+          "oklch(15% 0.04 58)",
+          "oklch(26% 0.07 58)",
+          "oklch(37% 0.1 58)",
+          "oklch(48% 0.12 58)",
+          "oklch(60% 0.14 58)",
+          "oklch(72% 0.15 58)",
+          "oklch(83% 0.1 58)",
+          "oklch(95% 0.03 58)"
+        ]
+      },
+      "night-ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "#080808",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(60% 0 0)",
+          "oklch(71% 0 0)",
+          "oklch(83% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "warm-ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#f1ebe5",
+        "tonalRamp": [
+          "oklch(15% 0.009 67)",
+          "oklch(26% 0.009 67)",
+          "oklch(37% 0.009 67)",
+          "oklch(48% 0.009 67)",
+          "oklch(60% 0.009 67)",
+          "oklch(71% 0.009 67)",
+          "oklch(83% 0.009 67)",
+          "oklch(94% 0.009 67)"
+        ]
+      },
+      "stone-muted": {
+        "role": "neutral",
+        "displayName": "Stone Muted",
+        "canonical": "#a6a39d",
+        "tonalRamp": [
+          "oklch(15% 0.007 85)",
+          "oklch(26% 0.007 85)",
+          "oklch(37% 0.007 85)",
+          "oklch(48% 0.007 85)",
+          "oklch(60% 0.007 85)",
+          "oklch(71% 0.007 85)",
+          "oklch(83% 0.007 85)",
+          "oklch(95% 0.007 85)"
+        ]
+      },
+      "ash-faint": {
+        "role": "neutral",
+        "displayName": "Ash Faint",
+        "canonical": "#817e79",
+        "tonalRamp": [
+          "oklch(15% 0.007 75)",
+          "oklch(26% 0.007 75)",
+          "oklch(37% 0.007 75)",
+          "oklch(48% 0.007 75)",
+          "oklch(59% 0.007 75)",
+          "oklch(71% 0.007 75)",
+          "oklch(83% 0.007 75)",
+          "oklch(95% 0.007 75)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline (14% ink)",
+        "canonical": "rgb(241 235 229 / 0.14)"
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong (28% ink)",
+        "canonical": "rgb(241 235 229 / 0.28)"
+      }
+    },
+    "typographyMeta": {
+      "hero": {
+        "displayName": "Hero",
+        "purpose": "The name in the hero only; last name italic in live signal orange, as in the approved comp."
+      },
+      "display-xl": {
+        "displayName": "Display XL",
+        "purpose": "The closing contact headline only."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Chapter headings with one italic closing clause."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project titles, sub-headings, disclosure summary."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Chapter intros and contact paragraph, stone muted, 52ch max."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Summaries and step bodies, stone muted, 48 to 56ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tracked mono for running heads, tabs, nav, buttons, chips, metadata."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "The single easing for every transition and animation; GSAP uses expo.out."
+      },
+      {
+        "name": "enter",
+        "value": "rise-in 1.1s ease-out-expo; from opacity 0, translateY(0.35em), blur(6px); delay i * 90ms + 120ms",
+        "purpose": "First-viewport entrance in CSS, runs from first paint."
+      },
+      {
+        "name": "rule-draw",
+        "value": "scaleX(0) to 1 from the left, 1.4s ease-out-expo",
+        "purpose": "Header and hero rules drawing in."
+      },
+      {
+        "name": "reveal",
+        "value": "GSAP: opacity 0 to 1, y 32px to 0, 1s expo.out, stagger 0.08s, ScrollTrigger.batch start 'top 88%', once",
+        "purpose": "Below-the-fold [data-reveal] elements in About; only those offscreen at mount are hidden."
+      },
+      {
+        "name": "reveal-landing",
+        "value": "GSAP: from opacity 0, y -40px, blur(12px) to rest, 0.9s power3.out, stagger 0.12s, ScrollTrigger.batch start 'top 88%'; on leave-back lifts back to the start state, 0.5s power2.in",
+        "purpose": "[data-reveal] elements from Journey onward (Journey, Selected work, How I work, Contact)."
+      },
+      {
+        "name": "panel-in",
+        "value": "opacity 0, translateY(10px) to rest, 0.5s ease-out-expo",
+        "purpose": "Incoming tab panel."
+      },
+      {
+        "name": "label-roll",
+        "value": "translateY(-100%) / translateY(0), 500ms ease-out-expo",
+        "purpose": "Rolling link labels on hover."
+      },
+      {
+        "name": "state-color",
+        "value": "300ms",
+        "purpose": "Colour and border changes on hover."
+      },
+      {
+        "name": "disclosure-open",
+        "value": "grid-template-rows 0fr to 1fr, 500ms ease-out-expo; icon rotate 45deg",
+        "purpose": "Disclosure open and close."
+      },
+      {
+        "name": "graph-draw",
+        "value": "primary route drawn over 1.6s after 0.5s with ease-out cubic, then one pulse loops at 0.22 cycles/s",
+        "purpose": "Retrieval graph live path."
+      },
+      {
+        "name": "journey-stack",
+        "value": "pinned, scrubbed (0.8s) for 65vh per milestone on 1024px+ wide and 640px+ tall, reversing on scroll up; each row descends from -28vh out of blur(12px), hairline draws from the left, node pops (back.out) with a signal flash cooling to ink, year/title/body fade down 28px from blur(6px) staggered 0.1; year below dims to stone muted; spine scales up from the base; certifications fade down last. Narrow or short: spine scrubs down the list, rows entering together land 0.28s apart with the same landing (40px drop) and reverse on leave-back",
+        "purpose": "Journey Tower timeline build."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "focus": {
+      "value": "outline: 1px solid #ec8838; outline-offset: 4px; border-radius: 999px",
+      "purpose": "Global focus-visible ring; tightens to a small radius on square controls (tabs, panels, disclosure row)."
+    },
+    "selection": {
+      "value": "background: #ec8838; color: #080808",
+      "purpose": "Text selection, one of the sanctioned live-signal uses."
+    },
+    "motionPreference": {
+      "value": "root data-motion=\"on|off\" set before first paint from prefers-reduced-motion; no on-page toggle",
+      "purpose": "Every animation opts out under data-motion=off or prefers-reduced-motion: reduce."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid warm-ink pill with a rolling label; the one main call to action per surface.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><span class=\"ds-roll\"><span class=\"ds-roll-a\">Explore my work</span><span class=\"ds-roll-b\" aria-hidden=\"true\">Explore my work</span></span><svg class=\"ds-arrow\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4.5 11.5 11.5 4.5M5.5 4.5h6v6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.9em; height: 3.5em; padding: 0 1.6em; border-radius: 999px; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; text-decoration: none; transition: background-color 300ms, border-color 300ms, color 300ms; } .ds-btn-primary { background: #f1ebe5; color: #080808; border: 0; } .ds-btn-primary:hover { background: #ffffff; } .ds-btn:focus-visible { outline: 1px solid #ec8838; outline-offset: 4px; } .ds-roll { position: relative; display: inline-flex; overflow: hidden; line-height: 1.25; } .ds-roll-a, .ds-roll-b { display: block; transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-roll-b { position: absolute; inset: 0; transform: translateY(100%); } .ds-btn:hover .ds-roll-a { transform: translateY(-100%); } .ds-btn:hover .ds-roll-b { transform: translateY(0); } .ds-arrow { width: 1.15em; height: 1.15em; flex-shrink: 0; transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn:hover .ds-arrow { transform: translate(1px, -1px); }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Hairline-strong pill with a rolling label; secondary actions, header 'Let's talk', social links.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\"><span class=\"ds-roll-o\"><span class=\"ds-roll-o-a\">Start a conversation</span><span class=\"ds-roll-o-b\" aria-hidden=\"true\">Start a conversation</span></span></a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; height: 3.5em; padding: 0 1.6em; border-radius: 999px; border: 1px solid rgb(241 235 229 / 0.28); background: transparent; color: #f1ebe5; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; text-decoration: none; transition: border-color 300ms; } .ds-btn-outline:hover { border-color: #f1ebe5; } .ds-btn-outline:focus-visible { outline: 1px solid #ec8838; outline-offset: 4px; } .ds-roll-o { position: relative; display: inline-flex; overflow: hidden; line-height: 1.25; } .ds-roll-o-a, .ds-roll-o-b { display: block; transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-roll-o-b { position: absolute; inset: 0; transform: translateY(100%); } .ds-btn-outline:hover .ds-roll-o-a { transform: translateY(-100%); } .ds-btn-outline:hover .ds-roll-o-b { transform: translateY(0); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "link-rolling",
+      "description": "Fixed header: serif name mark, plain rolling-link chapters, outline pill, strong hairline beneath.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-mark\" href=\"#\">Syed Hammad</a><nav aria-label=\"Primary\"><ul class=\"ds-nav\"><li><a class=\"ds-nav-link\" href=\"#\">About</a></li><li><a class=\"ds-nav-link\" href=\"#\">Journey</a></li><li><a class=\"ds-nav-link\" href=\"#\">Work</a></li><li><a class=\"ds-nav-link\" href=\"#\">Process</a></li></ul></nav></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 48px; height: 68px; padding: 0 28px; background: #080808; border-bottom: 1px solid rgb(241 235 229 / 0.28); } .ds-mark { font-family: 'Instrument Serif', 'Times New Roman', serif; font-size: 27px; line-height: 1; color: #f1ebe5; text-decoration: none; } .ds-nav { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; } .ds-nav-link { font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #f1ebe5; text-decoration: none; transition: color 300ms; } .ds-nav-link:hover { color: #ffffff; } .ds-nav-link:focus-visible { outline: 1px solid #ec8838; outline-offset: 4px; border-radius: 999px; }"
+    },
+    {
+      "name": "Stack Chip",
+      "kind": "chip",
+      "refersTo": "chip-tag",
+      "description": "Static hairline pill listing a stack item or tool.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\">LangGraph</li><li class=\"ds-chip\">Neo4j</li><li class=\"ds-chip\">FastAPI</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; } .ds-chip { border: 1px solid rgb(241 235 229 / 0.14); border-radius: 999px; padding: 6px 12px; font-family: 'DM Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #a6a39d; }"
+    },
+    {
+      "name": "Tabs",
+      "kind": "custom",
+      "refersTo": "tab",
+      "description": "Three-column ARIA tablist on a hairline baseline; selected tab in warm ink with an ink underline. No ordinals.",
+      "html": "<div class=\"ds-tablist\" role=\"tablist\" aria-label=\"Disciplines\"><button class=\"ds-tab\" role=\"tab\" aria-selected=\"true\"><span class=\"ds-tab-label\">Model</span><span class=\"ds-tab-detail\">Retrieval and reasoning</span></button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\"><span class=\"ds-tab-label\">Data</span><span class=\"ds-tab-detail\">Pipelines and schema</span></button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\"><span class=\"ds-tab-label\">Ship</span><span class=\"ds-tab-detail\">Product and deploy</span></button></div>",
+      "css": ".ds-tablist { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid rgb(241 235 229 / 0.14); } .ds-tab { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-height: 44px; margin-bottom: -1px; padding: 8px 12px 16px 0; background: none; border: 0; border-bottom: 1px solid transparent; color: #817e79; text-align: left; cursor: pointer; transition: color 300ms, border-color 300ms; } .ds-tab:hover { color: #a6a39d; } .ds-tab[aria-selected=\"true\"] { color: #f1ebe5; border-bottom-color: #f1ebe5; } .ds-tab:focus-visible { outline: 1px solid #ec8838; outline-offset: 4px; border-radius: 2px; } .ds-tab-label { font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; } .ds-tab-detail { font-family: 'DM Sans', system-ui, sans-serif; font-size: 14px; }"
+    },
+    {
+      "name": "Disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure-trigger",
+      "description": "Hairline-ruled row with serif summary, mono count, and a ringed plus that rotates to close.",
+      "html": "<button class=\"ds-disc\" aria-expanded=\"false\"><span class=\"ds-disc-title\">More work</span><span class=\"ds-disc-meta\"><span>5 projects</span><span class=\"ds-disc-ring\"><svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M8 3v10M3 8h10\"/></svg></span></span></button>",
+      "css": ".ds-disc { display: flex; width: 100%; min-height: 64px; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; background: none; border: 0; border-top: 1px solid rgb(241 235 229 / 0.14); border-bottom: 1px solid rgb(241 235 229 / 0.14); text-align: left; cursor: pointer; } .ds-disc:focus-visible { outline: 1px solid #ec8838; outline-offset: 4px; border-radius: 2px; } .ds-disc-title { font-family: 'Instrument Serif', 'Times New Roman', serif; font-size: 46px; line-height: 1; color: #f1ebe5; } .ds-disc-meta { display: flex; align-items: center; gap: 16px; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #a6a39d; transition: color 300ms; } .ds-disc:hover .ds-disc-meta { color: #f1ebe5; } .ds-disc-ring { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgb(241 235 229 / 0.28); transition: border-color 300ms; } .ds-disc:hover .ds-disc-ring { border-color: #f1ebe5; } .ds-disc-ring svg { width: 16px; height: 16px; transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-disc[aria-expanded=\"true\"] .ds-disc-ring svg { transform: rotate(45deg); }"
+    },
+    {
+      "name": "Chapter Marker",
+      "kind": "custom",
+      "refersTo": "chapter-marker",
+      "description": "Margin-rail running head: ink number, strong hairline dash, muted title, optional faint italic aside.",
+      "html": "<div class=\"ds-folio\"><p class=\"ds-folio-line\"><span class=\"ds-folio-num\">03</span><span class=\"ds-folio-dash\" aria-hidden=\"true\"></span><span>Selected work</span></p><p class=\"ds-folio-aside\">Things that shipped.</p></div>",
+      "css": ".ds-folio-line { display: flex; align-items: baseline; gap: 12px; margin: 0; font-family: 'DM Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #a6a39d; } .ds-folio-num { color: #f1ebe5; font-variant-numeric: tabular-nums; } .ds-folio-dash { width: 24px; height: 1px; background: rgb(241 235 229 / 0.28); transform: translateY(-0.3em); } .ds-folio-aside { margin: 16px 0 0; max-width: 18ch; font-family: 'Instrument Serif', 'Times New Roman', serif; font-style: italic; font-size: 24px; line-height: 1.1; color: #817e79; }"
+    },
+    {
+      "name": "Display Heading",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Serif chapter heading with one italic closing clause, warm ink.",
+      "html": "<h2 class=\"ds-display\">Systems that turn data <em>into answers.</em></h2>",
+      "css": ".ds-display { margin: 0; max-width: 13ch; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: 84px; line-height: 0.98; letter-spacing: -0.02em; color: #f1ebe5; text-wrap: balance; } .ds-display em { font-style: italic; }"
+    },
+    {
+      "name": "Proof Strip Stat",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Mono label over a tabular serif figure, columns divided by 20% ink rules.",
+      "html": "<dl class=\"ds-stats\"><div class=\"ds-stat\"><dt>Building since</dt><dd>2019</dd></div><div class=\"ds-stat\"><dt>Projects shipped</dt><dd>8</dd></div></dl>",
+      "css": ".ds-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; } .ds-stat { display: flex; flex-direction: column; gap: 10px; } .ds-stat + .ds-stat { border-left: 1px solid rgb(241 235 229 / 0.2); padding-left: 47px; } .ds-stat dt { font-family: 'DM Mono', ui-monospace, monospace; font-size: 12.8px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(241 235 229 / 0.85); } .ds-stat dd { margin: 0; font-family: 'Instrument Serif', 'Times New Roman', serif; font-size: 40px; line-height: 1; color: #f1ebe5; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Journey Tower",
+      "kind": "custom",
+      "refersTo": "journey-stack",
+      "description": "Chronological ordered list displayed bottom-up on wide screens: hairline rows with a serif year, serif title and muted body, each with a 7px node on a strong-hairline spine. Older years dim to stone muted as newer ones land; 'Next' is italic, faint, hollow-noded.",
+      "html": "<ol class=\"ds-tower\"><li class=\"ds-tower-row\"><span class=\"ds-tower-node\" aria-hidden=\"true\"></span><p class=\"ds-tower-year ds-tower-past\">2019</p><h3 class=\"ds-tower-title\">Learning by shipping.</h3><p class=\"ds-tower-body\">Started building websites for clients.</p></li><li class=\"ds-tower-row\"><span class=\"ds-tower-node\" aria-hidden=\"true\"></span><p class=\"ds-tower-year\">Today</p><h3 class=\"ds-tower-title\">Enterprise AI at scale.</h3><p class=\"ds-tower-body\">Building AI-powered enterprise applications.</p></li><li class=\"ds-tower-row ds-tower-next\"><span class=\"ds-tower-node\" aria-hidden=\"true\"></span><p class=\"ds-tower-year\">Next</p><h3 class=\"ds-tower-title\">More useful AI.</h3><p class=\"ds-tower-body\">Systems that let anyone ask their data a question.</p></li></ol>",
+      "css": ".ds-tower { position: relative; display: flex; flex-direction: column-reverse; margin: 0; padding: 0; list-style: none; } .ds-tower::before { content: ''; position: absolute; top: 0; bottom: 0; left: 3px; width: 1px; background: rgb(241 235 229 / 0.28); } .ds-tower-row { position: relative; display: grid; grid-template-columns: 146px minmax(0, 0.9fr) minmax(0, 1.5fr); align-items: baseline; column-gap: 36px; padding: 14px 0 14px 50px; border-top: 1px solid rgb(241 235 229 / 0.14); } .ds-tower-node { position: absolute; left: 0; top: calc(14px + 19px - 3px); width: 7px; height: 7px; border-radius: 999px; background: #f1ebe5; } .ds-tower-year { margin: 0; font-family: 'Instrument Serif', 'Times New Roman', serif; font-size: 38px; line-height: 1; color: #f1ebe5; font-variant-numeric: tabular-nums; } .ds-tower-past { color: #a6a39d; } .ds-tower-title { margin: 0; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: 25px; line-height: 1.1; color: #f1ebe5; } .ds-tower-body { margin: 0; font-family: 'DM Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.45; color: #a6a39d; } .ds-tower-next .ds-tower-year { font-style: italic; color: #817e79; } .ds-tower-next .ds-tower-title { font-style: italic; color: #a6a39d; } .ds-tower-next .ds-tower-node { background: #080808; border: 1px solid #817e79; box-sizing: border-box; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Feature",
+    "overview": "The site reads like a long magazine feature printed on black: one subject, told in numbered chapters, with a serif voice large enough to carry the page on its own. Density is low and deliberate. Each chapter opens on a very large Instrument Serif heading whose second clause turns italic, and everything around it (running heads, metadata, buttons) drops to small, tracked DM Mono so the serif never competes with itself.\n\nStructure comes from hairline rules at low ink opacity, not from boxes, fills, or shadows. Featured work is laid out as ruled editorial rows rather than a grid of equal cards. The only colour with a temperature beyond the warm off-white ink is a single orange, and it is reserved for things that are live: the lit path through the hero's retrieval graph, text selection, the focus ring, and the caret.\n\nThe one moving image is the live retrieval graph in the hero: ink nodes and edges whose weight fades toward the field's rim, with an orange route that draws itself on load and a second ink route that links as the visitor scrolls. Motion elsewhere is quiet: a staggered blur-rise for the first viewport, opacity-and-lift reveals below the fold, and labels that roll on hover. All of it switches off under prefers-reduced-motion.",
+    "keyCharacteristics": [
+      "Near-black ground, warm off-white ink, two stepped greys; one orange for live signals only.",
+      "Instrument Serif at a single weight (400) for every heading, with one italic clause per headline.",
+      "DM Mono, uppercase and tracked, for every label, folio, nav item, and button.",
+      "Hairline rules and pill outlines carry all structure; no shadows, no filled cards.",
+      "A margin rail on wide screens holds chapter running heads, aligned with the header nav.",
+      "Layout measured in comp units (1 unit = 1px of a 1280-wide comp), fluid with the viewport."
+    ],
+    "rules": [
+      {
+        "name": "The Live Wire Rule",
+        "body": "Orange means \"live.\" It appears on the graph's active path, selection, focus, and caret, and never on headings, italics, body text, borders, or decoration. The one exception is the italic last name in the hero headline, which matches the approved comp.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Inks Rule",
+        "body": "Text hierarchy is carried by warm ink, stone muted, and ash faint, in that order. Do not introduce a new hue to separate levels; drop a step instead.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Structure is drawn with 1px rules at 14% ink (hairline) or 28% ink (hairline-strong). The hero proof strip's vertical dividers sit between them at 20% ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Italic Clause Rule",
+        "body": "Each serif headline carries exactly one italic clause, and it closes the line. Italic also marks quoted results, margin asides, and things that have not happened yet; it is never coloured.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Weight Rule",
+        "body": "Instrument Serif runs at 400 only. Hierarchy comes from size and italic, never from bolding the serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Is Metadata Rule",
+        "body": "DM Mono is always uppercase, tracked, and small. It labels; it never carries a sentence of prose. Numbers in labels and stats use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Margin Rail Rule",
+        "body": "On wide screens, chapter running heads live in the 32.66vw margin rail and stay sticky beside the content; they never sit as a label above the heading.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Night Rule",
+        "body": "Nothing casts a shadow. If an element needs separation, give it a hairline or a tonal step, never an offset or glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep orange (live-signal) to the graph's live path, selection, focus, and caret.",
+      "Do give every serif headline one italic closing clause, in warm ink.",
+      "Do set every label, folio, nav item, button, and chip in uppercase tracked DM Mono at label size.",
+      "Do divide content with hairline rules (14% or 28% ink) and lay out work as ruled rows.",
+      "Do place chapter running heads in the 32.66vw margin rail from 1024px, and under the heading below that.",
+      "Do size layout in comp units (`100vw / 1280`) clamped with px floors and ceilings.",
+      "Do ship content visible in the server HTML; animate only offscreen `[data-reveal]` elements, and honour `prefers-reduced-motion` on every animation.",
+      "Do keep ash faint (about 4.96:1) as the lightest-contrast text; never go dimmer for readable copy."
+    ],
+    "donts": [
+      "Don't put eyebrow kickers or small mono labels above headings. The hero's role and location lines are a one-off approved by the user from the comp, not a reusable device.",
+      "Don't number tabs or prefix them with ordinals.",
+      "Don't add shadows, glows, backdrop blurs, or filled cards to separate content.",
+      "Don't colour italics, headings, or body text orange.",
+      "Don't bold Instrument Serif or introduce another display face.",
+      "Don't use icon fonts or glyph icons; draw icons as inline SVG with a 1.25 stroke.",
+      "Don't round structural elements; radius belongs to pill controls only."
+    ]
+  }
+}

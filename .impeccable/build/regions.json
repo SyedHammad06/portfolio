@@ -1,0 +1,25 @@
+{
+  "allowUncovered": true,
+  "regions": [
+    { "id": "wordmark", "kind": "text", "pixelBox": { "x": 22, "y": 16, "w": 170, "h": 42 }, "note": "serif wordmark 'Syed Hammad'" },
+    { "id": "nav-links", "kind": "control", "pixelBox": { "x": 418, "y": 22, "w": 370, "h": 32 }, "note": "mono uppercase nav links Work About Process Journey" },
+    { "id": "talk-pill", "kind": "control", "pixelBox": { "x": 940, "y": 14, "w": 155, "h": 46 }, "note": "outlined pill button 'Let's talk' with arrow" },
+    { "id": "motion-toggle", "kind": "control", "pixelBox": { "x": 1128, "y": 20, "w": 132, "h": 34 }, "note": "mono label 'Motion on' with switch" },
+    { "id": "header-rule", "kind": "chrome", "pixelBox": { "x": 0, "y": 68, "w": 1280, "h": 5 }, "note": "hairline rule under the top bar" },
+    { "id": "kicker-role", "kind": "text", "pixelBox": { "x": 28, "y": 104, "w": 340, "h": 24 }, "note": "mono kicker 'AI ENGINEER. DATA SCIENTIST. BUILDER.'" },
+    { "id": "kicker-location", "kind": "text", "pixelBox": { "x": 28, "y": 189, "w": 186, "h": 24 }, "note": "mono kicker 'BASED IN BENGALURU'" },
+    { "id": "headline", "kind": "text", "pixelBox": { "x": 28, "y": 226, "w": 662, "h": 108 }, "note": "giant display serif 'Syed Hammad', Hammad italic" },
+    { "id": "thesis", "kind": "text", "pixelBox": { "x": 28, "y": 362, "w": 726, "h": 32 }, "note": "sans thesis line about enterprise data" },
+    { "id": "cta-primary", "kind": "control", "pixelBox": { "x": 28, "y": 436, "w": 222, "h": 56 }, "note": "filled ink pill 'Explore my work'" },
+    { "id": "cta-secondary", "kind": "control", "pixelBox": { "x": 262, "y": 436, "w": 260, "h": 56 }, "note": "outlined pill 'Start a conversation'" },
+    { "id": "graph", "kind": "chrome", "pixelBox": { "x": 696, "y": 148, "w": 570, "h": 362 }, "note": "runtime canvas: animated nodes and edges with mono labels and one orange path" },
+    { "id": "proof-rule", "kind": "chrome", "pixelBox": { "x": 0, "y": 560, "w": 1280, "h": 6 }, "note": "hairline rule above the proof strip" },
+    { "id": "stat-since", "kind": "text", "pixelBox": { "x": 28, "y": 590, "w": 148, "h": 78 }, "note": "stat 'Building since 2019'" },
+    { "id": "divider-1", "kind": "chrome", "pixelBox": { "x": 292, "y": 586, "w": 6, "h": 86 }, "note": "vertical hairline divider" },
+    { "id": "stat-reco", "kind": "text", "pixelBox": { "x": 342, "y": 590, "w": 228, "h": 78 }, "note": "stat '+24% recommendation accuracy'" },
+    { "id": "divider-2", "kind": "chrome", "pixelBox": { "x": 622, "y": 586, "w": 6, "h": 86 }, "note": "vertical hairline divider" },
+    { "id": "stat-forecast", "kind": "text", "pixelBox": { "x": 672, "y": 590, "w": 180, "h": 78 }, "note": "stat '+8% forecast precision'" },
+    { "id": "divider-3", "kind": "chrome", "pixelBox": { "x": 917, "y": 586, "w": 6, "h": 86 }, "note": "vertical hairline divider" },
+    { "id": "stat-certs", "kind": "text", "pixelBox": { "x": 970, "y": 590, "w": 256, "h": 78 }, "note": "stat '5 cloud and AI certifications'" }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 3,
+  "stage": "components",
+  "id": "components",
+  "title": "Plan and asset review · src/app/page.tsx",
+  "comp": {
+    "path": ".impeccable/mocks/comp-1-name-led.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "specSha256": "e6105493923a5aeae466db2e56b2f4e17cbde5a11e0e46bb1fcca24a5be4a2ee",
+  "components": [
+    {
+      "id": "graph",
+      "name": "Graph",
+      "kind": "chrome",
+      "role": "plan",
+      "box": {
+        "x": 0.5437,
+        "y": 0.2056,
+        "w": 0.4453,
+        "h": 0.5028
+      },
+      "note": "runtime canvas: animated nodes and edges with mono labels and one orange path",
+      "medium": "code",
+      "preview": {
+        "kind": "comp-crop"
+      },
+      "codeDrawn": false,
+      "dependencies": []
+    }
+  ],
+  "codeRegions": [
+    {
+      "id": "wordmark",
+      "name": "Wordmark",
+      "kind": "text",
+      "box": {
+        "x": 0.0172,
+        "y": 0.0222,
+        "w": 0.1328,
+        "h": 0.0583
+      },
+      "note": "serif wordmark 'Syed Hammad'"
+    },
+    {
+      "id": "nav-links",
+      "name": "Nav links",
+      "kind": "control",
+      "box": {
+        "x": 0.3266,
+        "y": 0.0306,
+        "w": 0.2891,
+        "h": 0.0444
+      },
+      "note": "mono uppercase nav links Work About Process Journey"
+    },
+    {
+      "id": "talk-pill",
+      "name": "Talk pill",
+      "kind": "control",
+      "box": {
+        "x": 0.7344,
+        "y": 0.0194,
+        "w": 0.1211,
+        "h": 0.0639
+      },
+      "note": "outlined pill button 'Let's talk' with arrow"
+    },
+    {
+      "id": "motion-toggle",
+      "name": "Motion toggle",
+      "kind": "control",
+      "box": {
+        "x": 0.8812,
+        "y": 0.0278,
+        "w": 0.1031,
+        "h": 0.0472
+      },
+      "note": "mono label 'Motion on' with switch"
+    },
+    {
+      "id": "header-rule",
+      "name": "Header rule",
+      "kind": "chrome",
+      "box": {
+        "x": 0,
+        "y": 0.0944,
+        "w": 1,
+        "h": 0.0069
+      },
+      "note": "hairline rule under the top bar"
+    },
+    {
+      "id": "kicker-role",
+      "name": "Kicker role",
+      "kind": "text",
+      "box": {
+        "x": 0.0219,
+        "y": 0.1444,
+        "w": 0.2656,
+        "h": 0.0333
+      },
+      "note": "mono kicker 'AI ENGINEER. DATA SCIENTIST. BUILDER.'"
+    },
+    {
+      "id": "kicker-location",
+      "name": "Kicker location",
+      "kind": "text",
+      "box": {
+        "x": 0.0219,
+        "y": 0.2625,
+        "w": 0.1453,
+        "h": 0.0333
+      },
+      "note": "mono kicker 'BASED IN BENGALURU'"
+    },
+    {
+      "id": "headline",
+      "name": "Headline",
+      "kind": "text",
+      "box": {
+        "x": 0.0219,
+        "y": 0.3139,
+        "w": 0.5172,
+        "h": 0.15
+      },
+      "note": "giant display serif 'Syed Hammad', Hammad italic"
+    },
+    {
+      "id": "thesis",
+      "name": "Thesis",
+      "kind": "text",
+      "box": {
+        "x": 0.0219,
+        "y": 0.5028,
+        "w": 0.5672,
+        "h": 0.0444
+      },
+      "note": "sans thesis line about enterprise data"
+    },
+    {
+      "id": "cta-primary",
+      "name": "Cta primary",
+      "kind": "control",
+      "box": {
+        "x": 0.0219,
+        "y": 0.6056,
+        "w": 0.1734,
+        "h": 0.0778
+      },
+      "note": "filled ink pill 'Explore my work'"
+    },
+    {
+      "id": "cta-secondary",
+      "name": "Cta secondary",
+      "kind": "control",
+      "box": {
+        "x": 0.2047,
+        "y": 0.6056,
+        "w": 0.2031,
+        "h": 0.0778
+      },
+      "note": "outlined pill 'Start a conversation'"
+    },
+    {
+      "id": "proof-rule",
+      "name": "Proof rule",
+      "kind": "chrome",
+      "box": {
+        "x": 0,
+        "y": 0.7778,
+        "w": 1,
+        "h": 0.0083
+      },
+      "note": "hairline rule above the proof strip"
+    },
+    {
+      "id": "stat-since",
+      "name": "Stat since",
+      "kind": "text",
+      "box": {
+        "x": 0.0219,
+        "y": 0.8194,
+        "w": 0.1156,
+        "h": 0.1083
+      },
+      "note": "stat 'Building since 2019'"
+    },
+    {
+      "id": "divider-1",
+      "name": "Divider 1",
+      "kind": "chrome",
+      "box": {
+        "x": 0.2281,
+        "y": 0.8139,
+        "w": 0.0047,
+        "h": 0.1194
+      },
+      "note": "vertical hairline divider"
+    },
+    {
+      "id": "stat-reco",
+      "name": "Stat reco",
+      "kind": "text",
+      "box": {
+        "x": 0.2672,
+        "y": 0.8194,
+        "w": 0.1781,
+        "h": 0.1083
+      },
+      "note": "stat '+24% recommendation accuracy'"
+    },
+    {
+      "id": "divider-2",
+      "name": "Divider 2",
+      "kind": "chrome",
+      "box": {
+        "x": 0.4859,
+        "y": 0.8139,
+        "w": 0.0047,
+        "h": 0.1194
+      },
+      "note": "vertical hairline divider"
+    },
+    {
+      "id": "stat-forecast",
+      "name": "Stat forecast",
+      "kind": "text",
+      "box": {
+        "x": 0.525,
+        "y": 0.8194,
+        "w": 0.1406,
+        "h": 0.1083
+      },
+      "note": "stat '+8% forecast precision'"
+    },
+    {
+      "id": "divider-3",
+      "name": "Divider 3",
+      "kind": "chrome",
+      "box": {
+        "x": 0.7164,
+        "y": 0.8139,
+        "w": 0.0047,
+        "h": 0.1194
+      },
+      "note": "vertical hairline divider"
+    },
+    {
+      "id": "stat-certs",
+      "name": "Stat certs",
+      "kind": "text",
+      "box": {
+        "x": 0.7578,
+        "y": 0.8194,
+        "w": 0.2,
+        "h": 0.1083
+      },
+      "note": "stat '5 cloud and AI certifications'"
+    }
+  ]
+}

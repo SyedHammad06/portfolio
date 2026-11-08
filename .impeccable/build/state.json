@@ -1,0 +1,336 @@
+{
+  "tool": "build-phase",
+  "version": 2,
+  "startedAt": "2026-11-07T17:22:00.583Z",
+  "comp": ".impeccable/mocks/comp-1-name-led.jpg",
+  "direction": "pinned-reference",
+  "breakpoint": "1280x720",
+  "artifact": "src/app/page.tsx",
+  "phase": "hero",
+  "phases": {
+    "comps": {
+      "status": "closed",
+      "openedAt": "2026-11-07T17:22:00.583Z",
+      "closedAt": "2026-11-07T17:26:09.452Z",
+      "attempts": 1,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "3 comps, 1 approved",
+        "approved": ".impeccable/mocks/comp-1-name-led.jpg",
+        "at": "2026-11-07T17:26:09.452Z"
+      },
+      "forced": null
+    },
+    "spec": {
+      "status": "closed",
+      "openedAt": "2026-11-07T17:26:09.457Z",
+      "closedAt": "2026-11-07T17:32:04.767Z",
+      "attempts": 2,
+      "notes": [
+        {
+          "at": "2026-11-07T17:31:55.608Z",
+          "text": "Headline face is brief-pinned: Instrument Serif (the user pinned the reference portfolio's type; comp prompted with Instrument Serif character). font-match ranking could not resolve a browser; its catalog fallback (Edu AU VIC WA NT Guides, a handwriting face) contradicts the comp and the brief."
+        }
+      ],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "20 regions, 0 plates, 9 text regions measured",
+        "at": "2026-11-07T17:32:04.767Z"
+      },
+      "forced": null
+    },
+    "plates": {
+      "status": "closed",
+      "openedAt": "2026-11-07T17:32:04.767Z",
+      "closedAt": "2026-11-07T17:37:15.657Z",
+      "attempts": 2,
+      "notes": [],
+      "gate": {
+        "ok": true,
+        "reasons": [],
+        "summary": "no plates owed",
+        "at": "2026-11-07T17:37:15.655Z"
+      },
+      "forced": null
+    },
+    "hero": {
+      "status": "open",
+      "openedAt": "2026-11-07T17:37:15.657Z",
+      "closedAt": null,
+      "attempts": 2,
+      "notes": [
+        {
+          "at": "2026-11-07T17:53:26.340Z",
+          "text": "First-viewport review after 3 failed hero attempts: the user accepted the build shown in .impeccable/review/hero-repro.png (75%) in chat, answering 'Accept: build the rest from this first viewport'. Remaining blockers are the approved off-white italic last name, the brief-pinned Instrument Serif wordmark, and a standard on-right motion switch. The hosted review capture could not load a Next.js route (pinned snapshot requires an HTML entry)."
+        }
+      ],
+      "gate": {
+        "ok": false,
+        "reasons": [
+          "region wordmark (text) is contradicted (structure 23%, detail added 14%): the composition of this text region differs from the comp; re-derive it from the spec box",
+          "region talk-pill (control) is contradicted (structure 28%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region motion-toggle (control) is contradicted (structure 26%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+          "region headline (text) is contradicted (structure 20%, detail added 27%): the composition of this text region differs from the comp; re-derive it from the spec box",
+          "control nav-links drifts to 61% (structure 37%, color 96%): open .impeccable/review/diff/hero/regions/nav-links.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+          "control cta-primary drifts to 62% (structure 53%, color 84%): open .impeccable/review/diff/hero/regions/cta-primary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+          "control cta-secondary drifts to 62% (structure 41%, color 95%): open .impeccable/review/diff/hero/regions/cta-secondary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+        ],
+        "regionReasons": {
+          "wordmark": [
+            "region wordmark (text) is contradicted (structure 23%, detail added 14%): the composition of this text region differs from the comp; re-derive it from the spec box"
+          ],
+          "talk-pill": [
+            "region talk-pill (control) is contradicted (structure 28%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "motion-toggle": [
+            "region motion-toggle (control) is contradicted (structure 26%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification"
+          ],
+          "headline": [
+            "region headline (text) is contradicted (structure 20%, detail added 27%): the composition of this text region differs from the comp; re-derive it from the spec box"
+          ],
+          "nav-links": [
+            "control nav-links drifts to 61% (structure 37%, color 96%): open .impeccable/review/diff/hero/regions/nav-links.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "cta-primary": [
+            "control cta-primary drifts to 62% (structure 53%, color 84%): open .impeccable/review/diff/hero/regions/cta-primary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "cta-secondary": [
+            "control cta-secondary drifts to 62% (structure 41%, color 95%): open .impeccable/review/diff/hero/regions/cta-secondary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ]
+        },
+        "summary": "hero 75% (drift)",
+        "score": 0.7512,
+        "verdict": "drift",
+        "report": ".impeccable/review/diff/hero/report.json",
+        "sideBySide": "C:/Code/Learn/Cursor/.impeccable/review/diff/hero/side-by-side.png",
+        "worst": [
+          "headline contradicted 43%",
+          "motion-toggle contradicted 46%",
+          "wordmark contradicted 49%"
+        ],
+        "worstIds": [
+          "headline",
+          "motion-toggle",
+          "wordmark"
+        ],
+        "worstCrops": [
+          {
+            "id": "headline",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.4273,
+              "structure": 0.1996,
+              "color": 0.8285,
+              "colorIntersection": 0.7786,
+              "paletteMatch": 0.8554,
+              "detail": 0.5546,
+              "detailRaw": 0.69,
+              "detailAdded": 0.2708,
+              "bands": 0.3714
+            },
+            "file": ".impeccable/review/diff/hero/regions/headline.png"
+          },
+          {
+            "id": "motion-toggle",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.4643,
+              "structure": 0.2633,
+              "color": 0.8385,
+              "colorIntersection": 0.6988,
+              "paletteMatch": 0.9138,
+              "detail": 0.2618,
+              "detailRaw": 0.3295,
+              "detailAdded": 0.1354,
+              "bands": 0
+            },
+            "file": ".impeccable/review/diff/hero/regions/motion-toggle.png"
+          },
+          {
+            "id": "wordmark",
+            "verdict": "contradicted",
+            "score": {
+              "overall": 0.4864,
+              "structure": 0.2272,
+              "color": 0.9355,
+              "colorIntersection": 0.8857,
+              "paletteMatch": 0.9623,
+              "detail": 0.5597,
+              "detailRaw": 0.6274,
+              "detailAdded": 0.1354,
+              "bands": 0.55
+            },
+            "file": ".impeccable/review/diff/hero/regions/wordmark.png"
+          }
+        ],
+        "advisories": [
+          "(advisory, unchanged for 3+ attempts) text motion-toggle: cap height 8.4px in the build, 18.8px in the comp (-55%); set font-size so the cap height renders at 18.8px",
+          "(advisory, unchanged for 3+ attempts) text motion-toggle: ink is #a6a698 in the build, #515151 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) text headline: ink is #f4e6e5 in the build, #ec8837 in the comp; use the comp's colour",
+          "(advisory, unchanged for 3+ attempts) control talk-pill: its rule sits 1px into the box in the comp and 41px in the build (+40px), so the strip is taller than the comp's; match the height, not only the position"
+        ],
+        "regionVerdicts": {
+          "wordmark": "contradicted",
+          "nav-links": "drift",
+          "talk-pill": "contradicted",
+          "motion-toggle": "contradicted",
+          "header-rule": "drift",
+          "kicker-role": "drift",
+          "kicker-location": "drift",
+          "headline": "contradicted",
+          "thesis": "drift",
+          "cta-primary": "drift",
+          "cta-secondary": "drift",
+          "graph": "drift",
+          "proof-rule": "drift",
+          "stat-since": "drift",
+          "divider-1": "drift",
+          "stat-reco": "drift",
+          "divider-2": "contradicted",
+          "stat-forecast": "drift",
+          "divider-3": "drift",
+          "stat-certs": "drift"
+        },
+        "at": "2026-11-07T17:53:28.410Z"
+      },
+      "forced": null,
+      "readingsSeen": {
+        "text motion-toggle: cap height 8.4px in the build, 18.8px in the comp (-55%); set font-size so the cap height renders at 18.8px": 5,
+        "text cta-secondary: letter-spacing is wider than the comp's (gap 0.249 vs 0.166 of the cap height); set letter-spacing to close it by about 1px": 1,
+        "text headline: ink is #f4e6e5 in the build, #ec8837 in the comp; use the comp's colour": 6,
+        "control talk-pill: its rule sits 1px into the box in the comp and 41px in the build (+40px), so the strip is taller than the comp's; match the height, not only the position": 6,
+        "control cta-primary: its rule sits 3px into the box in the comp and 41px in the build (+38px), so the strip is taller than the comp's; match the height, not only the position": 2,
+        "text motion-toggle: cap height 8.1px in the build, 18.8px in the comp (-57%); set font-size so the cap height renders at 18.8px": 1,
+        "text cta-secondary: cap height 9.3px in the build, 12px in the comp (-22%); set font-size so the cap height renders at 12px": 1,
+        "text wordmark: cap height 24.3px in the build, 19.3px in the comp (+26%); set font-size so the cap height renders at 19.3px": 1,
+        "text motion-toggle: ink is #a6a698 in the build, #515151 in the comp; use the comp's colour": 4
+      },
+      "records": 4,
+      "history": [
+        {
+          "at": "2026-11-07T17:48:49.502Z",
+          "score": 0.7512,
+          "worstIds": [
+            "headline",
+            "motion-toggle",
+            "wordmark"
+          ],
+          "blockingReasons": [
+            "region wordmark (text) is contradicted (structure 23%, detail added 14%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region talk-pill (control) is contradicted (structure 28%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region motion-toggle (control) is contradicted (structure 26%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region headline (text) is contradicted (structure 20%, detail added 27%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "control nav-links drifts to 61% (structure 37%, color 96%): open .impeccable/review/diff/hero/regions/nav-links.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control cta-primary drifts to 62% (structure 53%, color 84%): open .impeccable/review/diff/hero/regions/cta-primary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control cta-secondary drifts to 62% (structure 41%, color 95%): open .impeccable/review/diff/hero/regions/cta-secondary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "wordmark": "contradicted",
+            "nav-links": "drift",
+            "talk-pill": "contradicted",
+            "motion-toggle": "contradicted",
+            "header-rule": "drift",
+            "kicker-role": "drift",
+            "kicker-location": "drift",
+            "headline": "contradicted",
+            "thesis": "drift",
+            "cta-primary": "drift",
+            "cta-secondary": "drift",
+            "graph": "drift",
+            "proof-rule": "drift",
+            "stat-since": "drift",
+            "divider-1": "drift",
+            "stat-reco": "drift",
+            "divider-2": "contradicted",
+            "stat-forecast": "drift",
+            "divider-3": "drift",
+            "stat-certs": "drift"
+          },
+          "artifactHash": "fb1f162f4703"
+        },
+        {
+          "at": "2026-11-07T17:53:28.413Z",
+          "score": 0.7512,
+          "worstIds": [
+            "headline",
+            "motion-toggle",
+            "wordmark"
+          ],
+          "blockingReasons": [
+            "region wordmark (text) is contradicted (structure 23%, detail added 14%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "region talk-pill (control) is contradicted (structure 28%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region motion-toggle (control) is contradicted (structure 26%, detail added 14%): this control differs from the comp: inspect its lettering and visible shape separately against the crop and the measured readings; preserve the region's control classification",
+            "region headline (text) is contradicted (structure 20%, detail added 27%): the composition of this text region differs from the comp; re-derive it from the spec box",
+            "control nav-links drifts to 61% (structure 37%, color 96%): open .impeccable/review/diff/hero/regions/nav-links.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control cta-primary drifts to 62% (structure 53%, color 84%): open .impeccable/review/diff/hero/regions/cta-primary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification",
+            "control cta-secondary drifts to 62% (structure 41%, color 95%): open .impeccable/review/diff/hero/regions/cta-secondary.png and compare its lettering and visible shape separately; use the measured readings and preserve the region's control classification"
+          ],
+          "regionVerdicts": {
+            "wordmark": "contradicted",
+            "nav-links": "drift",
+            "talk-pill": "contradicted",
+            "motion-toggle": "contradicted",
+            "header-rule": "drift",
+            "kicker-role": "drift",
+            "kicker-location": "drift",
+            "headline": "contradicted",
+            "thesis": "drift",
+            "cta-primary": "drift",
+            "cta-secondary": "drift",
+            "graph": "drift",
+            "proof-rule": "drift",
+            "stat-since": "drift",
+            "divider-1": "drift",
+            "stat-reco": "drift",
+            "divider-2": "contradicted",
+            "stat-forecast": "drift",
+            "divider-3": "drift",
+            "stat-certs": "drift"
+          },
+          "artifactHash": "fb1f162f4703"
+        }
+      ]
+    },
+    "sections": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "motion": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "responsive": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    },
+    "review": {
+      "status": "pending",
+      "openedAt": null,
+      "closedAt": null,
+      "attempts": 0,
+      "notes": [],
+      "gate": null,
+      "forced": null
+    }
+  },
+  "finish": null,
+  "plates": {}
+}
