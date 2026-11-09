@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
   title: "Syed Hammad | AI Engineer",
   description:
     "AI Engineer in Bengaluru building LLM systems on enterprise data: NL2SQL, Graph RAG, forecasting, and the products around them.",
-  url: "https://syedhammad.vercel.app",
+  url: "https://syedhammad.co.in",
   email: "syedhammad@myyahoo.com",
   location: "Bengaluru, India",
   socials: [

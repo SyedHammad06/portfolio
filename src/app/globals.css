@@ -146,7 +146,8 @@ a {
 
   .hero-graph {
     margin-top: 36px;
-    margin-inline: 64px 76px;
+    /* Bleed to the right screen edge; the left inset leaves room for the left-side node labels. */
+    margin-inline: 24px calc(var(--gutter) * -1);
     aspect-ratio: 570 / 362;
   }
 

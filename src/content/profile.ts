@@ -34,9 +34,9 @@ export const loader = {
 
 export const stats: Stat[] = [
   { value: "2019", label: "Building since", labelFirst: true },
-  { value: "25+", label: "Projects shipped" },
+  { value: "8", label: "Projects shipped" },
   { value: "3", label: "Core disciplines" },
-  { value: "14+", label: "Cloud and AI certifications" },
+  { value: "5", label: "Cloud and AI certifications" },
 ];
 
 export const about = {
@@ -76,7 +76,7 @@ export const journey = {
 export const contact = {
   title: "Contact",
   headline: { lead: "Something great starts with", emphasis: "a hello." },
-  body: "Have an interesting idea, a question, or just want to connect? I'd love to hear from you.",
+  body: "Hiring for AI engineering, or have data that should answer questions? I read every message.",
 };
 
 export const disciplines: Discipline[] = [
